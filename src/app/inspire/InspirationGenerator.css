@@ -1,0 +1,93 @@
+/* Common styles for all devices */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f0f0; /* Set a light background color */
+  }
+  
+  .inspiration-generator {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 400px;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .inspiration-generator:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    color: #333;
+  }
+  
+  .quote-container {
+    margin: 20px 0;
+  }
+  
+  .inspire-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inspire-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* FancyText.css */
+  .fancy {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .title {
+    color: #2196f3;
+  }
+  
+  .cursive {
+    font-style: italic;
+    color: #ff9800;
+  }
+  
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    .inspiration-generator {
+      background-color: #333;
+      color: #fff;
+    }
+  
+    .header {
+      color: #ccc;
+    }
+  
+    .inspire-button {
+      background-color: #555;
+    }
+  
+    .inspire-button:hover {
+      background-color: #444;
+    }
+  }
+  
+  /* Responsive styles for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .inspiration-generator {
+      max-width: 100%;
+    }
+  
+    .inspire-button {
+      width: 100%;
+    }
+  }
+  
